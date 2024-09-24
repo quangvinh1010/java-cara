@@ -1,0 +1,83 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Định dạng cho menu con */
+#navbar li {
+    position: relative; /* Đảm bảo rằng menu con được định vị tương đối với mục cha */
+}
+
+#navbar .sub-menu {
+    display: none; /* Ẩn menu con theo mặc định */
+    position: absolute; /* Định vị menu con tuyệt đối */
+    top: 100%; /* Đặt vị trí của menu con ngay bên dưới mục menu cha */
+    left: 0;
+    background-color: #fff; /* Màu nền cho menu con */
+    padding: 10px 0;
+    min-width: 200px; /* Chiều rộng tối thiểu cho menu con */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Thêm bóng đổ để tạo chiều sâu */
+    z-index: 1000; /* Đảm bảo menu con xuất hiện trên các phần tử khác */
+    border-radius: 4px; /* Góc bo tròn */
+}
+
+#navbar li:hover > .sub-menu {
+    display: block; /* Hiển thị menu con khi di chuột vào */
+}
+
+#navbar .sub-menu .menu-item {
+    padding: 10px 20px;
+}
+
+#navbar .sub-menu .menu-item a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+#navbar .sub-menu .menu-item a:hover {
+    background-color: #f2f2f2; /* Màu nền khi di chuột vào */
+    color: #088178; /* Màu chữ khi di chuột vào */
+}
+
+/*input.form-search.mr-sm-2 {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input.search {
+    width: 100%;
+}*/
+
+.form-select {
+    margin-left: 10px;
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* General Styles */
+
